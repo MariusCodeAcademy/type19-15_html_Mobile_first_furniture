@@ -1,0 +1,11 @@
+/* rem setup */
+
+body {
+  font-size: 62.5%; /* 1rem = 10px */
+  font-family: 'Playfair Display', serif;
+}
+
+.container {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
