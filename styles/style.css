@@ -1,11 +1,35 @@
 /* rem setup */
-
-body {
+html {
   font-size: 62.5%; /* 1rem = 10px */
+  --primary: #07484a;
+}
+body {
   font-family: 'Playfair Display', serif;
+  color: var(--primary);
 }
 
 .container {
   padding-left: 1.6rem;
   padding-right: 1.6rem;
+}
+
+/* header */
+
+.header-grid {
+  padding-top: 3.2rem;
+  display: grid;
+  grid-template-columns: 3.2rem auto 11rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-grid .fa {
+  font-size: 2.5rem;
+}
+.logo {
+  font-size: 2.6rem;
+}
+header .social {
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
 }
