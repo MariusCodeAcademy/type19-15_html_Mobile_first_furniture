@@ -2,6 +2,8 @@
 html {
   font-size: 62.5%; /* 1rem = 10px */
   --primary: #07484a;
+  --secondary: #70908b;
+  --light: #fdfbf8;
 }
 body {
   font-family: 'Playfair Display', serif;
@@ -11,6 +13,18 @@ body {
 .container {
   padding-left: 1.6rem;
   padding-right: 1.6rem;
+}
+
+/* common css */
+.btn {
+  border: 1px solid var(--secondary);
+  background-color: var(--secondary);
+  color: var(--light);
+  padding: 2rem 4.4rem;
+  border-radius: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
 }
 
 /* header */
@@ -32,4 +46,28 @@ header .social {
   display: flex;
   gap: 18px;
   justify-content: space-between;
+}
+
+/* <!-- hero --> */
+.hero {
+  height: 92.5rem;
+  background-color: palegoldenrod;
+}
+h1 {
+  font-size: 3.6rem;
+  margin-bottom: 3rem;
+}
+.hero .container {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text {
+  font-size: 1.8rem;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 27.5rem;
+  margin-bottom: 5rem;
 }
