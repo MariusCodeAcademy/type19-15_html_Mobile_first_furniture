@@ -30,6 +30,11 @@ body {
   font-weight: bold;
   font-size: 1.8rem;
 }
+.btn-arrow::after {
+  content: '\f178';
+  font-family: FontAwesome;
+  margin-left: 1.5rem;
+}
 .section-title {
   font-size: 3.6rem;
 }
@@ -211,6 +216,7 @@ h1 {
   .categories > .btn-arrow {
     grid-row: 4 / 5;
     justify-self: center;
+    margin-bottom: 3.8rem;
   }
 }
 
@@ -219,5 +225,29 @@ h1 {
     font-size: 6.4rem;
     max-width: 68.8rem;
     margin-bottom: 3rem;
+  }
+  /* categories */
+  .categories .section-title {
+    grid-area: title;
+  }
+  .search-block {
+    grid-area: search;
+  }
+  .cat-names {
+    grid-area: catNames;
+  }
+  .cats-list {
+    grid-area: catsList;
+  }
+  .categories .btn-arrow {
+    grid-area: btn;
+  }
+  .categories {
+    grid-template-columns: 35rem auto;
+    grid-template-areas:
+      'title title'
+      'search catsList'
+      'catNames catsList'
+      'btn catsList';
   }
 }
