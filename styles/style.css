@@ -35,9 +35,16 @@ body {
 }
 
 /* header */
-
+header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  z-index: 10;
+}
 .header-grid {
-  padding-top: 3.2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   display: grid;
   grid-template-columns: 3.2rem auto 11rem;
   justify-content: space-between;
@@ -58,7 +65,10 @@ header .social {
 /* <!-- hero --> */
 .hero {
   height: 92.5rem;
-  background-color: palegoldenrod;
+  background: palegoldenrod url('/img/hero-bg-640.jpg') no-repeat center;
+  background-size: cover;
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
 }
 h1 {
   font-size: 3.6rem;
@@ -132,9 +142,39 @@ h1 {
 }
 
 /* medias */
-@media screen and (min-width: 689px) {
+@media screen and (min-width: 992px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .btn {
+    padding: 2.3rem 5.4rem;
+    font-size: 2.4rem;
+  }
+  /* hero------- */
+  .hero {
+    background: palegoldenrod url('/img/hero-bg.jpg') no-repeat center;
+    height: 68.9rem;
+  }
   .hero .container {
     text-align: left;
     align-items: start;
+  }
+  h1 {
+    font-size: 4.8rem;
+    max-width: 58.8rem;
+    margin-bottom: 2.5rem;
+  }
+  .hero-text {
+    font-size: 2.5rem;
+    max-width: initial;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h1 {
+    font-size: 6.4rem;
+    max-width: 68.8rem;
+    margin-bottom: 3rem;
   }
 }
