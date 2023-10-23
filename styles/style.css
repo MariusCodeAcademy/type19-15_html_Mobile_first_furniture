@@ -19,7 +19,19 @@ body {
   padding-right: 1.6rem;
 }
 
+/* utilty css */
+.tac {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* common css */
+
 .btn {
   border: 1px solid var(--secondary);
   background-color: var(--secondary);
@@ -159,6 +171,31 @@ h1 {
   border-radius: 1rem;
   margin-bottom: 2rem;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+/* Benefits------------------------------- */
+.benefits {
+  background-color: #e0eff6;
+}
+.benefits .section-title {
+  margin-bottom: 5rem;
+}
+.b-card .fa {
+  border: 1px solid #000;
+  background-color: #eeebff;
+  border-radius: 2.5rem;
+  height: 11.5rem;
+  width: 11.5rem;
+  font-size: 6rem;
+  margin-bottom: 2.4rem;
+}
+.b-card h3 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+.b-card p {
+  font-size: 1.8rem;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* medias */
