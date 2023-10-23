@@ -23,6 +23,15 @@ body {
 .tac {
   text-align: center;
 }
+.bg-cream {
+  background-color: #fff4e7;
+}
+.bg-green {
+  background-color: #caf3e5;
+}
+.bg-purp {
+  background-color: #eeebff;
+}
 
 .flex-center {
   display: flex;
@@ -180,9 +189,20 @@ h1 {
 .benefits .section-title {
   margin-bottom: 5rem;
 }
+.b-cards-cont {
+  display: grid;
+  gap: 7rem;
+  grid-template-columns: repeat(1, 1fr);
+  /* justify-items: center; */
+}
+.b-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .b-card .fa {
   border: 1px solid #000;
-  background-color: #eeebff;
+  /* background-color: #eeebff; */
   border-radius: 2.5rem;
   height: 11.5rem;
   width: 11.5rem;
@@ -196,6 +216,7 @@ h1 {
 .b-card p {
   font-size: 1.8rem;
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 
 /* medias */
@@ -207,6 +228,9 @@ h1 {
   .btn {
     padding: 2.3rem 5.4rem;
     font-size: 2.4rem;
+  }
+  .section-title {
+    font-size: 4.8rem;
   }
   /* hero------- */
   .hero {
@@ -254,6 +278,10 @@ h1 {
     grid-row: 4 / 5;
     justify-self: center;
     margin-bottom: 3.8rem;
+  }
+  .b-cards-cont {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15.3rem;
   }
 }
 
